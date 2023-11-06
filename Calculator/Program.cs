@@ -10,7 +10,7 @@
     {
         public int Add(int a, int b)
         {
-            return a + b
+            return a + b;
         }
 
         public double Subtract(int v1, int v2)
