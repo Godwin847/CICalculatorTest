@@ -8,7 +8,7 @@ on:
 jobs:
  build:
    runs-on: ubuntu-latest
-
+ 
    steps:
    - name: Checkout Repository
      uses: actions/checkout@v2
@@ -30,3 +30,10 @@ jobs:
 
    - name: Project Test
      run: dotnet test
+     
+ tests:
+   name: Unit Tests
+   runs-on: ubuntu-latest
+   steps:
+    - uses: actions/setup-dotnet@v3
+    - run: dotnet test
